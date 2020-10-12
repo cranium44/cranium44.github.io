@@ -1,0 +1,67 @@
+.home {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  padding: 60px 20px;
+  background: white;
+  background-image: url("../../assets/expp.svg");
+  background-repeat: no-repeat;
+
+  .rrow {
+    //float: none;
+    margin-top: 80px;
+    .column {
+      .left-text {
+      padding: 100px 100px;
+      .main-text {
+        font-size: 3.2rem;
+        line-height: 1.5;
+      }
+      .sub-text {
+        font-size: 2rem;
+        line-height: 1.5;
+        color: #801336;
+      }
+      .action-buttons {
+        width: 400px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        display: flex;
+
+        .learn-more {
+          float: left;
+        }
+        .hire-gig {
+          float: right;
+        }
+      }
+    }
+    }
+  }
+
+  .follow-text {
+    margin-top: 150px;
+  }
+
+  .sm-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    width: 200px;
+    height: auto;
+
+    .icons {
+      color: #2d132c;
+      font-weight: 100;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+}

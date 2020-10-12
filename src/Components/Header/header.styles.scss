@@ -1,0 +1,131 @@
+.header {
+  position: absolute;
+  padding: 60px 0px;
+  nav {
+    .rotate {
+      animation: rotation 8s infinite linear;
+    }
+
+    .hambg {
+      position: fixed;
+      top: 30px;
+      right: 60px;
+      color: white;
+      z-index: 2;
+      &:hover {
+        cursor: pointer;
+      }
+
+
+      .navShowing {
+        height: 100vh;
+        width: 450px;
+        position: fixed;
+        z-index: 6;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition:  2s ease-in-out;
+        cursor: default;
+
+        .navItems {
+          list-style: none;
+          padding: 8px 15px 8px 32px;
+          margin: 5px auto;
+          font-size: 25px;
+          color: white;
+          display: block;
+          transition: 1s ease;
+          &:hover {
+            cursor: pointer;
+            transform: scale(0.9,0.9);
+          }
+        }
+
+        .navClose {
+          margin: 100px auto;
+          padding-top:20px;
+          width: 120px;
+          height: 100px;
+          list-style: none;
+          transition:  1s ease;
+
+          &:hover{
+           transform: scale(1.2,1.2);
+           cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 500px) {
+  .navShowing {
+        height: 100vh;
+        width: 300px;
+        position: fixed;
+        z-index: 6;
+        top: 0;
+        right: 0;
+        background-color: rgb(99, 100, 105);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition:  2s ease-in-out;
+        cursor: default;
+
+        .navItems {
+          list-style: none;
+          //padding: 8px 15px 8px 32px;
+          margin: 5px auto;
+          font-size: 20px;
+          color: white;
+          display: block;
+          transition: 1s ease;
+          &:hover {
+            cursor: pointer;
+            transform: scale(0.9,0.9);
+          }
+        }
+
+        .navClose {
+          margin: 100px auto;
+          padding-top:20px;
+          width: 80px;
+          height: 80px;
+          list-style: none;
+          transition:  1s ease;
+
+          &:hover{
+           transform: scale(1.2,1.2);
+           cursor: pointer;
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
