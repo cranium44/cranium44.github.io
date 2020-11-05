@@ -39,14 +39,14 @@ const App = () => {
                     <div className='left-text'>
                         <h2 className='main-text'>
                             Contact Me</h2>
-                        <div className='sub-text'>I am a Software Engineer</div>
+                        <div className='sub-text'>Contact Me</div>
                         {/* <div className='sub-text'>blah blah blah...</div> */}
                         <div className='action-buttons'>
                             {/* <div className='learn-more'>
                                 <ActionButton>My Skills</ActionButton>
                             </div> */}
                             <div className='hire-gig'>
-                                <ActionButton2>Hire me</ActionButton2>
+                                <ActionButton2>Call me</ActionButton2>
                             </div>
                         </div>
                     </div>

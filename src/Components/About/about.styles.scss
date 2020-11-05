@@ -22,12 +22,13 @@
           line-height: 1.5;
           color: #801336;
         }
-        .action-buttons {
-          width: 400px;
-          padding-top: 30px;
+        .interests {
+          //   width: 400px;
           padding-bottom: 20px;
           display: flex;
-
+          li {
+            font-size: 20px;
+          }
           .learn-more {
             width: 100%;
           }

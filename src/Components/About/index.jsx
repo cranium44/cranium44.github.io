@@ -41,11 +41,11 @@ const App = () => {
                             <p className="description" >{about}</p>
                         </div>
                         <div className='sub-text'>Interests</div>
-                        <div className='action-buttons'>
+                        <div className='interests'>
                             <ul>
                                 {interests.map((interest) => {
                                     return (
-                                        <li>{interest}</li>
+                                        <li >{interest}</li>
                                     )
                                 })}
                             </ul>
