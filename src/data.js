@@ -1,6 +1,6 @@
 // This file stores all the information in the website
 // edit/update the data here
-const about = "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
+const about = "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
 
 const interests = ["Lorem Ipsum", "Moton Ideal", "Pira Neve", "Dolor Sitema"]
 
@@ -8,27 +8,32 @@ const porfolioProjects = [
     {
         title: "Project 1",
         description: "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
-        technologies: 'Nemo Enim'
+        technologies: ['Kotlin' ,'Java'],
+        url: "https://github.com"
     },
     {
-        title: "Project 1",
+        title: "Project 2",
         description: "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
-        technologies: 'Nemo Enim'
+        technologies: ['Java', 'C#', 'C'],
+        url: "https://github.com"
     },
     {
-        title: "Project 1",
+        title: "Project 3",
         description: "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
-        technologies: 'Nemo Enim'
+        technologies: ['Java', 'C#'],
+        url: "https://github.com"
     },
     {
-        title: "Project 1",
+        title: "Project 4",
         description: "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
-        technologies: 'Nemo Enim'
+        technologies: ['Java', 'JavaScript'],
+        url: "https://github.com"
     },
     {
-        title: "Project 1",
+        title: "Project 5",
         description: "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
-        technologies: 'Nemo Enim'
+        technologies: ['C', 'JavaScript'],
+        url: "https://github.com"
     },
 ]
 

@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import ActionButton2 from '../ActionButton2/actionButton2.component';
 import './about.styles.scss';
 import Header from '../Header/header.component'
 import Footer from '../Footer';
-
+import { about, interests } from "../../data"
 
 class About extends Component {
     constructor(props) {
@@ -38,21 +37,23 @@ const App = () => {
                 <div className='col-sm-12 column'>
                     <div className='left-text'>
                         <h2 className='main-text'>About Me</h2>
-                        <div className='sub-text'>I am a Software Engineer</div>
-                        <div className='sub-text'>blah blah blah...</div>
+                        <div className="about-me">
+                            <p className="description" >{about}</p>
+                        </div>
+                        <div className='sub-text'>Interests</div>
                         <div className='action-buttons'>
-                            {/* <div className='learn-more'>
-                                <ActionButton>My Skills</ActionButton>
-                            </div> */}
+                            <ul>
+                                {interests.map((interest) => {
+                                    return (
+                                        <li>{interest}</li>
+                                    )
+                                })}
+                            </ul>
                             <div className='hire-gig'>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className='col-md-4 right-text'>
-
-
-        </div> */}
             </div>
 
             <Footer />

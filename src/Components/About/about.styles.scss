@@ -35,7 +35,14 @@
       }
     }
   }
+  .about-me {
+    width: 80%;
 
+    .description {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
   .follow-text {
     margin-top: 150px;
   }

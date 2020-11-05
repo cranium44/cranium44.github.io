@@ -4,7 +4,7 @@ import './projects.styles.scss';
 import Header from '../Header/header.component'
 import Footer from '../Footer'
 import React, { Component } from 'react'
-
+import { porfolioProjects } from "../../data"
 
 class Projects extends Component {
     constructor(props) {
@@ -39,21 +39,24 @@ const App = () => {
                     <div className='left-text'>
                         <h2 className='main-text'>My Projects</h2>
                         <div className='sub-text'>Here are some of my works</div>
-                        <div className='action-buttons'>
-                            {/* <div className='learn-more'>
-                                <ActionButton>My Skills</ActionButton>
-                            </div> */}
-                            <div className='hire-gig'>
-                                <ActionButton2>GitHub</ActionButton2>
-                                <ActionButton>HackerRank</ActionButton>
-                            </div>
+                        <div className='portfolio-section'>
+                            {porfolioProjects.map((item) => {
+                                return (
+                                    <div className="portfolio-item">
+                                        <h5>{item.title}</h5>
+                                        <p className="description">{item.description}</p>
+                                        <ul className="flex">{item.technologies.map((tech) => {
+                                            return (
+                                                <li className="item">{tech}</li>
+                                            )
+                                        })}</ul>
+                                    </div>
+                                )
+                            })}
+
                         </div>
                     </div>
                 </div>
-                {/* <div className='col-md-4 right-text'>
-
-
-        </div> */}
             </div>
 
             <Footer />
