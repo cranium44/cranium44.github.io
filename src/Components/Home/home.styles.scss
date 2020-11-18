@@ -3,8 +3,10 @@
   height: 80vh;
   position: relative;
   padding: 60px 20px;
+  // overflow: hidden;
   background: white;
   background-image: url("../../assets/expp.svg");
+  // background: red;
   background-repeat: no-repeat;
 
   .rrow {
@@ -17,6 +19,7 @@
         font-size: 3.2rem;
         line-height: 1.5;
       }
+
       .sub-text {
         font-size: 2rem;
         line-height: 1.5;
@@ -42,6 +45,20 @@
   .follow-text {
     margin-top: 150px;
   }
+
+        .image{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        // align-items: center;
+        
+
+        img{
+            height: 50%;
+            border-radius: 8px;
+
+        }
+      }
 
   .sm-list {
     display: flex;

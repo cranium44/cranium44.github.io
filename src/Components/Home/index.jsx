@@ -7,7 +7,10 @@ const Home = () => {
     return (
         <div className='home'>
             <div className=' row rrow'>
-                <div className='col-sm-12 column'>
+                <div className='col-md-5 image'>
+                    <img src={require('../../assets/dummyimage.jpg')}/>
+                </div>
+                <div className='col-sm-12  col-md-7 column'>
                     <div className='left-text'>
                         <h2 className='main-text'>Hi,
                       My name is Adabe</h2>

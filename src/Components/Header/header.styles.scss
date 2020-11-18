@@ -16,6 +16,11 @@
         cursor: pointer;
       }
 
+      @keyframes SlideIn{
+          0%{
+              margin-left: 100%;
+          }
+      }
 
       .navShowing {
         height: 100vh;
@@ -33,17 +38,26 @@
         .navItems {
           list-style: none;
           padding: 8px 15px 8px 32px;
-          margin: 5px auto;
+          margin: 5px;
           font-size: 25px;
           color: white;
           display: block;
           transition: 1s ease;
+          animation: SlideIn 0.5s;
+          animation-fill-mode: both;
+
           &:hover {
             cursor: pointer;
             transform: scale(0.9,0.9);
           }
         }
 
+ 
+        .navItems:nth-child(1){animation-delay:1s}
+        .navItems:nth-child(2){animation-delay:1.5s}
+        .navItems:nth-child(3){animation-delay:2s}
+        .navItems:nth-child(4){animation-delay:2.5s}
+        .navItems:nth-child(5){animation-delay:3s}
         .navClose {
           margin: 100px auto;
           padding-top:20px;
