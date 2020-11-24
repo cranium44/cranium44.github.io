@@ -1,8 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import ActionButton2 from '../ActionButton2/actionButton2.component';
+import emailjs from 'emailjs-com'
+import apikeys from './appkeys'
 import './contact.styles.scss';
 import Header from '../Header/header.component'
-import Footer from '../Footer';
+import { contactDetails } from '../../data';
+import { Twitter } from 'react-feather';
+import { Linkedin } from 'react-feather';
+import { Instagram } from 'react-feather';
+import { Facebook } from 'react-feather';
 
 
 class Contact extends Component {
@@ -14,6 +20,7 @@ class Contact extends Component {
             welcomeText: ''
         }
     }
+ 
 
     componentDidMount() {
         this.setState({
@@ -31,45 +38,96 @@ class Contact extends Component {
 }
 
 
+
 const App = () => {
+    const [response , setResponse] = useState('')
+    const onSubmit = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm('gmail', apikeys.TEMPLATE_ID, e.target, apikeys.USER_ID)
+            .then(result => {
+                console.log(result.text)
+                if (result.text === 'OK') {
+                    setResponse('success')
+                }
+            },
+                error => {
+                    
+                    setResponse(error.text)
+                })
+        e.target.reset();
+    }
+    
+
     return (
         <div className='home'>
             <div className=' row rrow'>
                 <div className='col-sm-12 column'>
                     <div className='left-text'>
                         <h2 className='main-text'>
-                            Contact Me</h2>
-                        {/* <div className='sub-text'>Contact Me</div> */}
-                        {/* <div className='sub-text'>blah blah blah...</div> */}
-                        <form>
-                            <div class="form-group form-width">
-                                <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                                   
+                            Get in Touch</h2>
+                        <div className='card card-width shadow border-0 p-2'>
+                            <div className='row1 p-3'>
+                                <form onSubmit={onSubmit} method=''> 
+                                    <h4>{response}</h4>
+                                    <div className="form-group form-width">
+                                        <label htmlFor="exampleInputEmail1">Name</label>
+                                        <input type="text" className="form-control" id="exampleInputName" aria-describedby="NameHelp" name="name" placeholder="Enter Name" />
+
+                                    </div>
+                                    <div className="form-group form-width">
+                                        <label htmlFor="exampleInputEmail1">Email</label>
+                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email" />
+
+                                    </div>
+                                    <div className="form-group form-width">
+                                        <label htmlFor="exampleInputEmail1">Subject</label>
+                                        <input type="subject" className="form-control" id="exampleInputSubject" aria-describedby="SubjectHelp" name="subject" placeholder="Enter Subject" />
+
+                                    </div>
+                                    <div className="form-group form-width">
+                                        <label htmlFor="exampleInputPassword1">Message</label>
+                                        <textarea type="text" className="form-control" id="exampleInputPassword1" name="message"></textarea>
+                                    </div>
+                                    <div className='action-buttons'>
+                                        <div className='hire-gig '>
+                                            <ActionButton2>Submit</ActionButton2>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+
                             </div>
-                            <div class="form-group form-width">
-                                <label for="exampleInputPassword1">Message</label>
-                                <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
-                            </div>
-                                   
-                        </form>
-                        <div className='action-buttons'>
-                            {/* <div className='learn-more'>
-                                <ActionButton>My Skills</ActionButton>
-                            </div> */}
-                            <div className='hire-gig'>
-                                <ActionButton2><a href='tel: 090377358296'>Call me</a></ActionButton2>
+                            <div className='row2'>
+                                <h4 className='mt-5'>Contact Info</h4>  
+
+                                <div className='mt-5'>
+                                    <h5>Email me at</h5>
+                                    <p>{contactDetails.email}</p>
+                                </div> 
+                                <div className='mt-5'>
+                                    <h5>Call me at</h5>
+                                    <p><a href= {`Tel: ${contactDetails.phone}`}></a>{contactDetails.phone}</p>
+                                </div>
+
+                                <div className='row footer'>
+                                    <div className='col-md-12 text-center'>
+                                        <div className='sm-list'>
+                                            <Facebook className='icons' />
+                                            <Twitter className='icons' />
+                                            <Linkedin className='icons' />
+                                            <Instagram className='icons' />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                {/* <div className='col-md-4 right-text'>
-
-
-        </div> */}
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

@@ -67,7 +67,20 @@
 }
 
 @media screen and (min-width: 990px) {
-      .form-width{
-        width: 50%;
+       .card-width{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+
+      }
+      .row1{
+        width:65%;
+        
+      }
+      .row2{
+        width: 35%;
+        text-align: center;
+        align-items: stretch;
       }
 }

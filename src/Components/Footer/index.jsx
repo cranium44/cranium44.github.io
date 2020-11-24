@@ -3,6 +3,7 @@ import { Twitter } from 'react-feather';
 import { Linkedin } from 'react-feather';
 import { Instagram } from 'react-feather';
 import { Facebook } from 'react-feather';
+
 import "./footer.styles.scss"
 
 

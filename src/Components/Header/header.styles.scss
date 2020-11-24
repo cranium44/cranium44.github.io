@@ -21,6 +21,17 @@
               margin-left: 100%;
           }
       }
+      @keyframes background-change{
+          0%{
+              right: -450px;
+              transition: right 8s  cubic-bezier(1,0,0,1)
+          }
+
+          100% {
+
+              right: 0;        
+          }
+      }
 
       .navShowing {
         height: 100vh;
@@ -32,6 +43,8 @@
         background-color: rgb(0, 0, 0);
         overflow-x: hidden;
         padding-top: 60px;
+        animation: background-change 1s;
+        animation-fill-mode: both;
         transition:  2s ease-in-out;
         cursor: default;
 
@@ -45,6 +58,7 @@
           transition: 1s ease;
           animation: SlideIn 0.5s;
           animation-fill-mode: both;
+          text-decoration: none;
 
           &:hover {
             cursor: pointer;
@@ -54,10 +68,24 @@
 
  
         .navItems:nth-child(1){animation-delay:1s}
-        .navItems:nth-child(2){animation-delay:1.5s}
-        .navItems:nth-child(3){animation-delay:2s}
-        .navItems:nth-child(4){animation-delay:2.5s}
-        .navItems:nth-child(5){animation-delay:3s}
+        .navItems:nth-child(2){animation-delay:1s}
+        .navItems:nth-child(3){animation-delay:1s}
+        .navItems:nth-child(4){animation-delay:1s}
+        .navItems:nth-child(5){animation-delay:1s}
+
+        .navEnding{
+          height: 100vh;
+          width: 450px;
+          position: fixed;
+          z-index: 6;
+          top: 0;
+          right: 0;
+          background-color: rgb(0, 0, 0);
+          overflow-x: hidden;
+          padding-top: 60px;
+          animation: background 1s;
+          animation-fill-mode: forwards;
+        }
         .navClose {
           margin: 100px auto;
           padding-top:20px;

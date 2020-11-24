@@ -15,6 +15,7 @@ class Header extends Component {
         if (this.state.navVisibility === false) {
             this.setState({
                 navVisibility: true
+
             });
         }
     }
