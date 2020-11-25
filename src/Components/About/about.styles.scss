@@ -1,25 +1,8 @@
-// .home {
-//   width: 100vw;
-//   max-width: 1450px;
-//   position: relative;
-//   padding: 0px 20px;
-//   background: white;
-//   background-image: url("../../assets/expp.svg");
-//   background-repeat: no-repeat;
+
 
   .rrow {
     .column {
-      .left-text {
-        padding: 50px 0px;
-        .main-text {
-          font-size: 3.2rem;
-          line-height: 1.5;
-        }
-        .sub-text {
-          font-size: 2rem;
-          line-height: 1.5;
-          color: #801336;
-        }
+
         .interests {
           padding-bottom: 20px;
           display: flex;
@@ -31,7 +14,7 @@
           }
         }
       }
-    }
+    // }
   // }
   .about-me {
     width: 80%;
@@ -75,7 +58,21 @@
 }
 @media screen and (min-width: 990px) {
       .left-text {
-        padding: 100px 100px;
+        padding: 50px 100px;
+      }
+}
+@media screen and (max-width: 500px){
+        .left-text {
+        padding: 50px 0px;
+        .main-text {
+          font-size: 3.2rem;
+          line-height: 1.5;
+        }
+        .sub-text {
+          font-size: 2rem;
+          line-height: 1.5;
+          color: #801336;
+        }
       }
 }
 

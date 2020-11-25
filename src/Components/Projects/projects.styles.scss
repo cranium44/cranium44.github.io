@@ -95,18 +95,18 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-  }
-        .left-text {
+     }
+      .left-text {
         padding: 50px 100px;
-        .main-text {
-          font-size: 3.2rem;
-          line-height: 1.5;
-        }
-        .sub-text {
-          font-size: 2rem;
-          line-height: 1.5;
-          color: #801336;
-        }
+          .main-text {
+            font-size: 3.2rem;
+            line-height: 1.5;
+          }
+          .sub-text {
+            font-size: 2rem;
+            line-height: 1.5;
+            color: #801336;
+          }
       }
 }
 @media screen and (max-width: 500px){

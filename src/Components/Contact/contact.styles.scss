@@ -1,28 +1,9 @@
-// .home {
-//   width: 100vw;
-//   height: auto;
-//   max-width: 1450px;
-//   position: relative;
-//   padding: 60px 20px;
-//   background: white;
-//   background-image: url("../../assets/expp.svg");
-//   background-repeat: no-repeat;
 
   .rrow {
     //float: none;
     margin-top: 20px;
     .column {
-      .left-text {
-      // padding: 100px 100px;
-      .main-text {
-        font-size: 3.2rem;
-        line-height: 1.5;
-      }
-      .sub-text {
-        font-size: 2rem;
-        line-height: 1.5;
-        color: #801336;
-      }
+
       .action-buttons {
         width: 400px;
         padding-top: 30px;
@@ -40,8 +21,7 @@
         }
       }
     }
-    }
-  // }
+
 
   .follow-text {
     margin-top: 150px;
@@ -66,22 +46,7 @@
     }
   }
 }
-//        .card-width{
-//         // display: flex;
-//         // flex-direction: row;
-//         width: 100%;
-//         margin: 0 auto;
 
-//       }
-//       .row1{
-//         width:100%;
-        
-//       }
-//       .row2{
-//         width: 100%;
-//         text-align: center;
-//         align-items: stretch;
-//       }
 @media screen and (min-width: 990px) {
        .card-width{
         display: flex;
@@ -105,5 +70,30 @@
       }
    .left-text {
       padding: 100px 100px;
+
+         .main-text {
+          font-size: 3.2rem;
+          line-height: 1.5;
+        }
+        .sub-text {
+          font-size: 2rem;
+          line-height: 1.5;
+          color: #801336;
+        }
    }
+}
+
+@media screen and (max-width: 500px){
+        .left-text {
+        padding: 50px 0px;
+        .main-text {
+          font-size: 1.5rem;
+          line-height: 1.5;
+        }
+        .sub-text {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #801336;
+        }
+      }
 }

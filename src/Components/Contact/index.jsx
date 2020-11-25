@@ -109,7 +109,7 @@ const App = () => {
                                 </div> 
                                 <div className='mt-5'>
                                     <h5>Call me at</h5>
-                                    <p><a href= {`Tel: ${contactDetails.phone}`}></a>{contactDetails.phone}</p>
+                                    <p><a href={`Tel: ${contactDetails.phone}`} style={{textDecoration: 'none'}}>{contactDetails.phone}</a></p>
                                 </div>
 
                                 <div className='row footer'>
