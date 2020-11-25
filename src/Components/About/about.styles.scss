@@ -1,18 +1,16 @@
-.home {
-  width: 100vw;
-  //   height: 80vh;
-  position: relative;
-  padding: 60px 20px;
-  background: white;
-  background-image: url("../../assets/expp.svg");
-  background-repeat: no-repeat;
+// .home {
+//   width: 100vw;
+//   max-width: 1450px;
+//   position: relative;
+//   padding: 0px 20px;
+//   background: white;
+//   background-image: url("../../assets/expp.svg");
+//   background-repeat: no-repeat;
 
   .rrow {
-    //float: none;
-    margin-top: 80px;
     .column {
       .left-text {
-        padding: 100px 100px;
+        padding: 50px 0px;
         .main-text {
           font-size: 3.2rem;
           line-height: 1.5;
@@ -23,7 +21,6 @@
           color: #801336;
         }
         .interests {
-          //   width: 400px;
           padding-bottom: 20px;
           display: flex;
           li {
@@ -35,7 +32,7 @@
         }
       }
     }
-  }
+  // }
   .about-me {
     width: 80%;
 
@@ -68,5 +65,17 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+.about_me-img{
+  display: flex;
+  justify-content: center;
+  img{
+    border-radius: 50%;
+    height: 300px;
+  }
 }
+@media screen and (min-width: 990px) {
+      .left-text {
+        padding: 100px 100px;
+      }
+}
+

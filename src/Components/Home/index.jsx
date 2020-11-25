@@ -2,6 +2,8 @@ import React from 'react';
 import ActionButton2 from '../ActionButton2/actionButton2.component';
 import './home.styles.scss';
 import Footer from '../Footer';
+import { NavLink } from "react-router-dom";
+import "../styles.scss";
 
 const Home = () => {
     return (
@@ -21,7 +23,8 @@ const Home = () => {
                                 <ActionButton>My Skills</ActionButton>
                             </div> */}
                             <div className='hire-gig'>
-                                <ActionButton2>Hire me</ActionButton2>
+                                <NavLink exact to="contact" className='navItems' style={{textDecoration: 'none'}}><ActionButton2>Contact me</ActionButton2></NavLink>
+                                
                             </div>
                         </div>
                     </div>

@@ -1,27 +1,8 @@
-.home {
-  width: 100vw;
-  height: auto;
-  position: relative;
-  padding: 60px 20px;
-  background: white;
-  background-image: url("../../assets/expp.svg");
-  background-repeat: no-repeat;
+
+
 
   .rrow {
-    //float: none;
-    margin-top: 80px;
     .column {
-      .left-text {
-        padding: 100px 100px;
-        .main-text {
-          font-size: 3.2rem;
-          line-height: 1.5;
-        }
-        .sub-text {
-          font-size: 2rem;
-          line-height: 1.5;
-          color: #801336;
-        }
         .action-buttons {
           width: 400px;
           padding-top: 30px;
@@ -36,24 +17,33 @@
           }
         }
       }
-    }
+    
   }
 
   .portfolio-section {
     margin-top: 30px;
     margin-bottom: 40px;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .portfolio-item {
-    width: 400px;
+    width: 500px;
     padding: 10px;
     margin-bottom: 3em;
-    cursor: pointer;
-    // background-color: rgba(0,0,0,0.5);
-    // z-index: 2;
+    background-color: rgba(rgb(235, 235, 235), 0.1);
+
+    img{
+      background-color: rgba(rgb(149, 149, 149), 0.1);
+    }
+      &:hover{
+      background: none;
+
+      img{
+        background: #ffffff
+      }
+    }
 
     .flex {
       display: flex;
@@ -63,7 +53,16 @@
       padding-right: 30px;
     }
   }
+  // &:hover{
+  //   background: none;
 
+  //   img{
+  //     background: #ffffff
+  //   }
+  // }
+  .item {
+    cursor: pointer;
+  }
   .follow-text {
     margin-top: 150px;
   }
@@ -86,7 +85,44 @@
       }
     }
   }
-}
 
-@media screen and (min-width: 500px) {
+
+@media screen and (min-width: 990px) {
+    .portfolio-section {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+        .left-text {
+        padding: 50px 100px;
+        .main-text {
+          font-size: 3.2rem;
+          line-height: 1.5;
+        }
+        .sub-text {
+          font-size: 2rem;
+          line-height: 1.5;
+          color: #801336;
+        }
+      }
+}
+@media screen and (max-width: 500px){
+
+        .left-text {
+        padding:  0;
+        .main-text {
+          font-size: 1.5rem;
+          line-height: 1.5;
+        }
+        .sub-text {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #801336;
+        }
+      }
+
+   
 }

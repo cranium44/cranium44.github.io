@@ -5,8 +5,9 @@ import Footer from "../Footer";
 import React, { Component } from "react";
 import { porfolioProjects } from "../../data";
 import Modal from 'react-bootstrap/Modal'
-import { Button } from 'react-bootstrap'
+import { Eye } from 'react-feather';
 import { GitHub } from 'react-feather';
+import "../styles.scss";
 
 function MyModal(props) {
   return (
@@ -40,11 +41,6 @@ function MyModal(props) {
                         })}
                       </ul>
                   </Modal.Body>
-                  {/* <Modal.Footer> */}
-                      {/* <ActionButton2> */}
-                      {/* <button className='action-btn2' onClick={props.onHide}>Close</button> */}
-                      {/* </ActionButton2> */}
-                  {/* </Modal.Footer> */}
                    </> : ''
               }
 
@@ -74,7 +70,7 @@ function MainModal() {
                 {porfolioProjects.map((item) => {
                   return (
                     
-                    <div className="portfolio-item card m-3"  onClick={() => { setModalShow(true); setactive(item.id) }} >
+                    <div className="portfolio-item card m-3"  >
                       <img src={item.image}  style={{maxHeight: '300px'}}/>
                       <h5>{item.title}</h5>
                       <p className="description">{item.description}</p>
@@ -83,7 +79,13 @@ function MainModal() {
                           return  <li className="item"  >{tech}</li>
                             ;
                         })}
-                        <GitHub className='icons' />
+                        <div className='item d-flex'>
+                          <a href={item.url}><GitHub className='icons' /></a>
+                          
+                          <div className='pl-3' onClick={() => { setModalShow(true); setactive(item.id) }}>  <Eye className='icons' /></div>
+                        </div>
+                       
+                        
                       </ul>
                     </div>
                   );

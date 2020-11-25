@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './header.styles.scss';
 import { NavLink } from "react-router-dom";
+import onClickOutside from 'react-onclickoutside';
 
 class Header extends Component {
     constructor(props) {
@@ -26,6 +27,14 @@ class Header extends Component {
                 navVisibility: false
             });
         }
+    }
+    handleClickOutside() {
+        if (this.state.navVisibility === true) {
+            this.setState({
+                navVisibility: false
+            });
+        }
+        
     }
     render() {
         const { navVisibility } = this.state
@@ -63,8 +72,6 @@ class Header extends Component {
                                     <NavLink activeClassName="" exact to="about" className='navItems'>About me</NavLink>
                                     <NavLink activeClassName="" exact to="projects" className='navItems'>Projects</NavLink>
                                     <NavLink activeClassName="" exact to="contact" className='navItems'>Contact</NavLink>
-                                    {/* <NavLink activeClassName="" exact to="skills" className='navItems'>Skills</NavLink> */}
-                                    <NavLink activeClassName="" exact to="contact" className='navItems'>Get in touch</NavLink>
                                     <li className='navClose text-center' onClick={this.closeNav}>
                                         <svg width='19' height='19' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
                                             <rect width='2.20965' height='15.4675' transform='matrix(0.728885 0.684637 -0.68464 0.728881 11.0962 0.213196)' fill='white' />
@@ -84,4 +91,4 @@ class Header extends Component {
 };
 
 
-export default Header;
+export default onClickOutside(Header) ;

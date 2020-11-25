@@ -3,6 +3,7 @@ import './about.styles.scss';
 import Header from '../Header/header.component'
 import Footer from '../Footer';
 import { about, interests } from "../../data"
+import "../styles.scss";
 
 class About extends Component {
     constructor(props) {
@@ -36,6 +37,9 @@ const App = () => {
             <div className=' row rrow'>
                 <div className='col-sm-12 column'>
                     <div className='left-text'>
+                        <div className='about_me-img'>
+                            <img src={require('../../assets/dummyimage.jpg')} />
+                        </div>
                         <h2 className='main-text'>About Me</h2>
                         <div className="about-me">
                             <p className="description" >{about}</p>

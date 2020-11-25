@@ -1,0 +1,19 @@
+.home {
+  width: 100vw;
+  max-width: 1450px;
+  height: auto;
+  position: relative;
+  padding: 60px 10px;
+  background: white;
+  background-image: url("../assets/expp.svg");
+  background-repeat: no-repeat;
+  animation: background-animation 0.5s;
+  animation-fill-mode: both;
+
+    @keyframes background-animation{
+      0%{
+          margin-top: 100%;
+      }
+
+  }
+}

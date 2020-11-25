@@ -9,6 +9,8 @@ import { Twitter } from 'react-feather';
 import { Linkedin } from 'react-feather';
 import { Instagram } from 'react-feather';
 import { Facebook } from 'react-feather';
+import "../styles.scss";
+
 
 
 class Contact extends Component {
@@ -89,16 +91,16 @@ const App = () => {
                                         <label htmlFor="exampleInputPassword1">Message</label>
                                         <textarea type="text" className="form-control" id="exampleInputPassword1" name="message"></textarea>
                                     </div>
-                                    <div className='action-buttons'>
-                                        <div className='hire-gig '>
+                                   
+                                        <div className='center '>
                                             <ActionButton2>Submit</ActionButton2>
+                                        
                                         </div>
-                                    </div>
                                     
                                 </form>
 
                             </div>
-                            <div className='row2'>
+                            <div className='row2 p-3'>
                                 <h4 className='mt-5'>Contact Info</h4>  
 
                                 <div className='mt-5'>
@@ -113,10 +115,11 @@ const App = () => {
                                 <div className='row footer'>
                                     <div className='col-md-12 text-center'>
                                         <div className='sm-list'>
-                                            <Facebook className='icons' />
-                                            <Twitter className='icons' />
-                                            <Linkedin className='icons' />
-                                            <Instagram className='icons' />
+                                            <a href={contactDetails.facebook}> <Facebook className='icons' /> </a>
+                                            
+                                            <a href={contactDetails.twitter}><Twitter className='icons' /></a>
+                                            <a href={contactDetails.linkedin}><Linkedin className='icons' /></a>
+                                            <a href={contactDetails.instagram}><Instagram className='icons' /></a>
                                         </div>
                                     </div>
                                 </div>
