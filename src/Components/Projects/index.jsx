@@ -57,11 +57,8 @@ function MainModal() {
   const [active, setactive] = React.useState('')
   return (
     <>
-      {/* <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
-      `     </Button> */}
       <div className="home">
-        <div className=" row rrow">
+        <div className="row rrow">
           <div className="col-sm-12 column">
             <div className="left-text">
               <h2 className="main-text">My Projects</h2>
@@ -71,22 +68,24 @@ function MainModal() {
                   return (
                     
                     <div className="portfolio-item card m-3"  >
-                      <img src={item.image}  style={{maxHeight: '300px'}}/>
-                      <h5>{item.title}</h5>
-                      <p className="description">{item.description}</p>
-                      <ul className="flex">
-                        {item.technologies.map((tech) => {
-                          return  <li className="item"  >{tech}</li>
-                            ;
-                        })}
-                        <div className='item d-flex'>
-                          <a href={item.url}><GitHub className='icons' /></a>
-                          
-                          <div className='pl-3' onClick={() => { setModalShow(true); setactive(item.id) }}>  <Eye className='icons' /></div>
-                        </div>
-                       
+                      <img src={item.image} style={{ maxHeight: '300px' }} />
+                      <div className='p-3'>
+                        <h5>{item.title}</h5>
+                        <p className="description">{item.description}</p>
+                        <ul className="flex">
+                          {item.technologies.map((tech) => {
+                            return  <li className="item"  >{tech}</li>
+                              ;
+                          })}
+                          <div className='item d-flex'>
+                            <a href={item.url}><GitHub className='icons' /></a>
+                            
+                            <div className='pl-3' onClick={() => { setModalShow(true); setactive(item.id) }}>  <Eye className='icons' /></div>
+                          </div>
                         
-                      </ul>
+                          
+                        </ul>
+                      </div>
                     </div>
                   );
                 })}

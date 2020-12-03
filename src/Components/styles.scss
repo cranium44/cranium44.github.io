@@ -1,10 +1,10 @@
 .home {
-  width: 100vw;
+  width: 98vw;
   max-width: 1450px;
   height: auto;
   position: relative;
-  padding: 60px 10px;
-  background: white;
+  padding: 40px 10px 0 20px;
+  overflow-x: hidden;
   background-image: url("../assets/expp.svg");
   background-repeat: no-repeat;
   animation: background-animation 0.5s;
@@ -15,5 +15,11 @@
           margin-top: 100%;
       }
 
+  }
+}
+@media screen and (min-width: 990px){
+  .home{
+    padding: 60px 100px 0 100px;
+    
   }
 }

@@ -1,6 +1,6 @@
 // This file stores all the information in the website
 // edit/update the data here
-import image from '../src/assets/OutSourcing-Software-Development-Projects.jpg'
+import image from '../src/assets/placeholder.png'
 const about = "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
 
 const interests = ["Lorem Ipsum", "Moton Ideal", "Pira Neve", "Dolor Sitema"]

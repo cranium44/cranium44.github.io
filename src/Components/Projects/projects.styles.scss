@@ -1,25 +1,17 @@
 
+  .action-buttons {
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
 
-
-  .rrow {
-    .column {
-        .action-buttons {
-          width: 400px;
-          padding-top: 30px;
-          padding-bottom: 20px;
-          display: flex;
-
-          .learn-more {
-            float: left;
-          }
-          .hire-gig {
-            float: right;
-          }
-        }
-      }
-    
+    .learn-more {
+      float: left;
+    }
+    .hire-gig {
+      float: right;
+    }
   }
-
   .portfolio-section {
     margin-top: 30px;
     margin-bottom: 40px;
@@ -52,16 +44,24 @@
     .item {
       padding-right: 30px;
     }
+    ul{
+      padding: 16px;
+    }
   }
-  // &:hover{
-  //   background: none;
 
-  //   img{
-  //     background: #ffffff
-  //   }
-  // }
   .item {
     cursor: pointer;
+
+    a{
+      color: black;
+    }
+    .icons{
+    &:hover{
+       transform: scale(1.1);
+       color: blue;
+    }
+    }
+
   }
   .follow-text {
     margin-top: 150px;
@@ -96,33 +96,26 @@
       flex-wrap: wrap;
       justify-content: center;
      }
-      .left-text {
-        padding: 50px 100px;
-          .main-text {
-            font-size: 3.2rem;
-            line-height: 1.5;
-          }
-          .sub-text {
-            font-size: 2rem;
-            line-height: 1.5;
-            color: #801336;
-          }
-      }
+      
+    .main-text {
+      font-size: 3.2rem;
+      line-height: 1.5;
+    }
+    .sub-text {
+      font-size: 2rem;
+      line-height: 1.5;
+      color: #801336;
+    }
+      
 }
 @media screen and (max-width: 500px){
-
-        .left-text {
-        padding:  0;
-        .main-text {
-          font-size: 1.5rem;
-          line-height: 1.5;
-        }
-        .sub-text {
-          font-size: 1rem;
-          line-height: 1.5;
-          color: #801336;
-        }
-      }
-
-   
+    .main-text {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    .sub-text {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #801336;
+    }
 }

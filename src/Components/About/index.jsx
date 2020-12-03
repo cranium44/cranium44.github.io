@@ -44,7 +44,7 @@ const App = () => {
                         <div className="about-me">
                             <p className="description" >{about}</p>
                         </div>
-                        <div className='sub-text'>Interests</div>
+                        <div className='sub-text'><h3>Interests</h3></div>
                         <div className='interests'>
                             <ul>
                                 {interests.map((interest) => {
@@ -57,8 +57,8 @@ const App = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> 
+             </div>
 
             <Footer />
         </div>

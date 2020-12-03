@@ -19,9 +19,6 @@ const Home = () => {
                         <div className='sub-text'>I am a Software Engineer</div>
                         <div className='sub-text'>blah blah blah...</div>
                         <div className='action-buttons'>
-                            {/* <div className='learn-more'>
-                                <ActionButton>My Skills</ActionButton>
-                            </div> */}
                             <div className='hire-gig'>
                                 <NavLink exact to="contact" className='navItems' style={{textDecoration: 'none'}}><ActionButton2>Contact me</ActionButton2></NavLink>
                                 
@@ -29,10 +26,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className='col-md-4 right-text'>
-
-
-        </div> */}
             </div>
 
             <Footer />
