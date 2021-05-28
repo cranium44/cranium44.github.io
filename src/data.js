@@ -44,14 +44,13 @@ const porfolioProjects = [
 
 
 const contactDetails = {
-    name: "Adabe",
-    phone: "+234 54454323",
-    emai: "dabs@gmail.com",
+    name: "Adabe Echaim",
+    phone: "+234 903 323 7339",
+    emai: "adabeechaim@gmail.com",
     address: "Nigeria",
     instagram: "https://instagram.com/",
-    linkedin: "https://www.linkedin.com/in",
-    twitter: "http://twitter.com/",
-    facebook: "https://facebook.com/",
-
+    linkedin: "https://www.linkedin.com/in/adabe-echaim-31273a8b/",
+    twitter: "https://twitter.com/cranium_44",
+    facebook: "https://facebook.com/cranium44",
 }
 export { porfolioProjects, about, interests, contactDetails }
