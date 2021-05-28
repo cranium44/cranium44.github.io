@@ -1,12 +1,7 @@
 import React from 'react';
-
-import { Twitter } from 'react-feather';
-import { Linkedin } from 'react-feather';
-import { Instagram } from 'react-feather';
-import { Youtube } from 'react-feather';
-import ActionButton from '../ActionButton/actionButton.component';
 import ActionButton2 from '../ActionButton2/actionButton2.component';
 import './home.styles.scss';
+import Footer from '../Footer';
 
 const Home = () => {
     return (
@@ -34,17 +29,7 @@ const Home = () => {
         </div> */}
             </div>
 
-            <div className='row'>
-                <div className='col-md-12 text-center'>
-                    {/* <p className='follow-text text-center'>Follow me</p> */}
-                    <div className='sm-list'>
-                        <Twitter className='icons' />
-                        <Linkedin className='icons' />
-                        <Instagram className='icons' />
-                        <Youtube className='icons' />
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </div>
     );
 };
