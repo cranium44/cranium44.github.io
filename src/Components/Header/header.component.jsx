@@ -61,6 +61,7 @@ class Header extends Component {
                                     </NavLink>
                                     <NavLink activeClassName="" exact to="about" className='navItems'>About me</NavLink>
                                     <NavLink activeClassName="" exact to="projects" className='navItems'>Projects</NavLink>
+                                    <NavLink activeClassName="" exact to="contact" className='navItems'>Contact</NavLink>
                                     {/* <NavLink activeClassName="" exact to="skills" className='navItems'>Skills</NavLink> */}
                                     <NavLink activeClassName="" exact to="contact" className='navItems'>Get in touch</NavLink>
                                     <li className='navClose text-center' onClick={this.closeNav}>

@@ -9,7 +9,7 @@
 
   .rrow {
     //float: none;
-    margin-top: 80px;
+    margin-top: 20px;
     .column {
       .left-text {
       padding: 100px 100px;
@@ -33,6 +33,9 @@
         }
         .hire-gig {
           float: right;
+          a{
+            text-decoration: none;
+          }
         }
       }
     }
@@ -63,5 +66,8 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 990px) {
+      .form-width{
+        width: 50%;
+      }
 }
