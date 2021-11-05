@@ -2,7 +2,7 @@
 // edit/update the data here
 const about = "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
 
-const interests = ["Lorem Ipsum", "Moton Ideal", "Pira Neve", "Dolor Sitema"]
+const interests = ["Learning", "Reading", "Video games", "Football"]
 
 const porfolioProjects = [
     {
@@ -52,5 +52,6 @@ const contactDetails = {
     linkedin: "https://www.linkedin.com/in/adabe-echaim-31273a8b/",
     twitter: "https://twitter.com/cranium_44",
     facebook: "https://facebook.com/cranium44",
+    github: "https://github.com/cranium44",
 }
 export { porfolioProjects, about, interests, contactDetails }
