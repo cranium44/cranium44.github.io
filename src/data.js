@@ -2,7 +2,7 @@
 // edit/update the data here
 const about = "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
 
-const interests = ["Lorem Ipsum", "Moton Ideal", "Pira Neve", "Dolor Sitema"]
+const interests = ["Learning", "Reading", "Video games", "Football"]
 
 const porfolioProjects = [
     {

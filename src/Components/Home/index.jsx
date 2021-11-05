@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div className="home">
       <div className=" row rrow">
-        <div className="col-sm-8 column">
-          <div className="left-text">
+        <div className="col-sm-12 column">
+          <div className="col-md-5 left-text">
             <h2 className="main-text">Hi, My name is Adabe</h2>
             <div className="sub-text">I am a Software Engineer</div>
             <div className="sub-text">blah blah blah...</div>
@@ -21,12 +21,15 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-md-4 right-text">
-            <img src="/logo512.png" alt=""/>
+          <div className="col-md-5 right-text">
+            <img
+              src="/pic.jpg"
+              alt="display pic"
+              className="right-text__image"
+            />
+          </div>
         </div>
       </div>
-
       <Footer />
     </div>
   );
