@@ -9,6 +9,8 @@
 
   .rrow {
     //float: none;
+    display: flex;
+    flex-direction: row;
     margin-top: 80px;
     .column {
       .left-text {

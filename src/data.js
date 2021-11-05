@@ -52,5 +52,6 @@ const contactDetails = {
     linkedin: "https://www.linkedin.com/in/adabe-echaim-31273a8b/",
     twitter: "https://twitter.com/cranium_44",
     facebook: "https://facebook.com/cranium44",
+    github: "https://github.com/cranium44"
 }
 export { porfolioProjects, about, interests, contactDetails }
