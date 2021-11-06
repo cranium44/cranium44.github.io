@@ -52,6 +52,11 @@
     padding: 10px;
     margin-bottom: 3em;
 
+    &:hover{
+      border: 1px black;
+      cursor: pointer;
+    }
+
     .flex {
       display: flex;
     }

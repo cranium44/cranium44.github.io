@@ -1,71 +1,77 @@
 .home {
-  width: 100vw;
-  //   height: 80vh;
-  position: relative;
-  padding: 60px 20px;
-  background: white;
-  background-image: url("../../assets/expp.svg");
-  background-repeat: no-repeat;
+	width: 100vw;
+	//   height: 80vh;
+	position: relative;
+	padding: 60px 20px;
+	background: white;
+	background-image: url("../../assets/expp.svg");
+	background-repeat: no-repeat;
 
-  .rrow {
-    //float: none;
-    margin-top: 80px;
-    .column {
-      .left-text {
-        padding: 100px 100px;
-        .main-text {
-          font-size: 3.2rem;
-          line-height: 1.5;
-        }
-        .sub-text {
-          font-size: 2rem;
-          line-height: 1.5;
-          color: #801336;
-        }
-        .interests {
-          //   width: 400px;
-          padding-bottom: 20px;
-          display: flex;
-          li {
-            font-size: 20px;
-          }
-          .learn-more {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-  .about-me {
-    width: 80%;
+	.rrow {
+		//float: none;
+		margin-top: 80px;
+		.column {
+			.left-text {
+				padding: 100px 100px;
+				.main-text {
+					font-size: 3.2rem;
+					line-height: 1.5;
+				}
+				.interests-container {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					.interests {
+						//   width: 400px;
+						padding-bottom: 20px;
+						display: flex;
+						flex-direction: column;
+						.sub-text {
+							font-size: 2rem;
+							line-height: 1.5;
+							color: #801336;
+						}
+						li {
+							font-size: 20px;
+						}
+						.learn-more {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.about-me {
+		width: 100%;
 
-    .description {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  }
-  .follow-text {
-    margin-top: 150px;
-  }
+		.description {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+	.follow-text {
+		margin-top: 150px;
+	}
 
-  .sm-list {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto;
-    width: 200px;
-    height: auto;
+	.sm-list {
+		display: flex;
+		justify-content: space-between;
+		margin: 40px auto;
+		width: 200px;
+		height: auto;
 
-    .icons {
-      color: #2d132c;
-      font-weight: 100;
-      transition: 0.5s ease-in-out;
+		.icons {
+			color: #2d132c;
+			font-weight: 100;
+			transition: 0.5s ease-in-out;
 
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-      }
-    }
-  }
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.1);
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 500px) {
