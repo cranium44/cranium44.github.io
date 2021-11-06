@@ -8,28 +8,48 @@ import { contactDetails } from "../../data";
 import "./footer.styles.scss";
 
 const Footer = () => {
-  return (
-    <div className="row footer">
-      <div className="col-md-12 text-center">
-        <div className="sm-list">
-          <a href={contactDetails.facebook}>
-            <Facebook className="icons" color="white" size={30} />
-          </a>
-          <a href={contactDetails.twitter}>
-            <Twitter className="icons" color="white" size={30} />
-          </a>
-          <a href={contactDetails.linkedin}>
-            <Linkedin className="icons" color="white" size={30} />
-          </a>
-          <a href={contactDetails.instagram}>
-            <Instagram className="icons" color="white" size={30} />
-          </a>
-          <a href={contactDetails.github}>
-            <GitHub className="icons" color="white" size={30} />
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className='row footer'>
+			<div className='col-md-12 text-center'>
+				<div className='sm-list'>
+					<a
+						href={contactDetails.facebook}
+						target='_blank'
+						rel='noreferrer'
+					>
+						<Facebook className='icons' color='white' size={30} />
+					</a>
+					<a
+						href={contactDetails.facebook}
+						target='_blank'
+						rel='noreferrer'
+					>
+						<Twitter className='icons' color='white' size={30} />
+					</a>
+					<a
+						href={contactDetails.facebook}
+						target='_blank'
+						rel='noreferrer'
+					>
+						<Linkedin className='icons' color='white' size={30} />
+					</a>
+					<a
+						href={contactDetails.facebook}
+						target='_blank'
+						rel='noreferrer'
+					>
+						<Instagram className='icons' color='white' size={30} />
+					</a>
+					<a
+						href={contactDetails.facebook}
+						target='_blank'
+						rel='noreferrer'
+					>
+						<GitHub className='icons' color='white' size={30} />
+					</a>
+				</div>
+			</div>
+		</div>
+	);
 };
 export default Footer;

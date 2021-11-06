@@ -3,8 +3,11 @@ import './actionButton.styles.scss';
 
 
 const ActionButton = ({ children }) => {
+    const goToSkills = () => {
+        window.location.href = '/about'
+    }
     return (
-        <button className='action-btn' >{children}</button>
+        <button className='action-btn' onClick={goToSkills}>{children}</button>
     )
 };
 

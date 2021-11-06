@@ -44,7 +44,10 @@
         }
       }
       .right-text{
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .right-text__image{
           height: 70vh;
         }        
