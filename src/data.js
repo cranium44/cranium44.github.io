@@ -52,19 +52,19 @@ const porfolioProjects = [
 	},
 	{
 		id: 4,
-		title: "Project 4",
+		title: "Portfolio Website",
 		description:
-			"Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
-		technologies: ["Java", "JavaScript"],
-		url: "https://github.com",
+			"My portfolio website displaying all the works I have created.",
+		technologies: ["ReactJS", "Bootstrap", "SCSS"],
+		url: "https://github.com/cranium44/cranium44.github.io",
 	},
 	{
 		id: 5,
-		title: "Project 5",
+		title: "Tappy",
 		description:
-			"Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
-		technologies: ["C", "JavaScript"],
-		url: "https://github.com",
+			"A clone of the Tappy Mobile Game where you navigate a bird through obstacles.",
+		technologies: ["C#", "Unity"],
+		url: "https://github.com/cranium44/Tappy",
 	},
 ];
 
