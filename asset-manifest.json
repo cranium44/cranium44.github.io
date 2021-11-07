@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cranium44.github.io/static/css/main.e8cc9b85.chunk.css",
-    "main.js": "/cranium44.github.io/static/js/main.f84e1eb3.chunk.js",
-    "main.js.map": "/cranium44.github.io/static/js/main.f84e1eb3.chunk.js.map",
+    "main.js": "/cranium44.github.io/static/js/main.1c769aa7.chunk.js",
+    "main.js.map": "/cranium44.github.io/static/js/main.1c769aa7.chunk.js.map",
     "runtime-main.js": "/cranium44.github.io/static/js/runtime-main.e9751546.js",
     "runtime-main.js.map": "/cranium44.github.io/static/js/runtime-main.e9751546.js.map",
     "static/js/2.d9c420c6.chunk.js": "/cranium44.github.io/static/js/2.d9c420c6.chunk.js",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.e9751546.js",
     "static/js/2.d9c420c6.chunk.js",
     "static/css/main.e8cc9b85.chunk.css",
-    "static/js/main.f84e1eb3.chunk.js"
+    "static/js/main.1c769aa7.chunk.js"
   ]
 }
