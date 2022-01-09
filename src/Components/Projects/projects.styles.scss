@@ -89,6 +89,13 @@
     }
   }
 }
+.project-url{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
 
 @media screen and (max-width: 500px) {
 }

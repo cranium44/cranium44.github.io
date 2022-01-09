@@ -99,11 +99,21 @@ function MainModal() {
 													}
 												)}
 											</ul>
-											<div className='flex'>
+											<div className='flex project-url'>
 												<span>
-													Url:{" "}
+													Source Code:{" "}
 													<a
-														href={item.url}
+														href={item.source}
+														target='_blank'
+														rel='noreferrer'
+													>
+														here
+													</a>
+												</span>
+												<span>
+													Deploy Url:{" "}
+													<a
+														href={item.deploy}
 														target='_blank'
 														rel='noreferrer'
 													>
