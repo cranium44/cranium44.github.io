@@ -51,7 +51,7 @@ const App = () => {
 								<div className='hire-gig'></div>
 							</div>
                             <div className='interests'>
-                            <div className='sub-text'>Skills</div>
+                            <div className='sub-text'> Technical Skills</div>
 							<ul>
 								{skills.map((interest, i) => {
 									return <li key={i}>{interest}</li>;

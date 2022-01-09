@@ -32,7 +32,8 @@ const porfolioProjects = [
 		description:
 			"A mobile app that allows a user to check the latest trending movies, save favourites and even watch the trailers.",
 		technologies: ["Kotlin", "Android", "YouTube Api", "IMDb Api"],
-		url: "https://github.com/cranium44/MovieHut",
+		source: "https://github.com/cranium44/MovieHut",
+		deploy:""
 	},
 	{
 		id: 2,
@@ -40,7 +41,8 @@ const porfolioProjects = [
 		description:
 			"An android app that allows a user to contribute to reforestation in Africa by bying trees that will be named after them.",
 		technologies: ["Kotlin", "Android"],
-		url: "https://github.com/cranium44/myrootapp",
+		source: "https://github.com/cranium44/myrootapp",
+		deploy:""
 	},
 	{
 		id: 3,
@@ -48,7 +50,8 @@ const porfolioProjects = [
 		description:
 			"An app that allows people share cooking recipes, invite friends over to a meal and connect all that love food and cooking.",
 		technologies: ["Kotlin", "Android", "AndroidX Jetpack"],
-		url: "https://github.com",
+		source: "https://github.com",
+		deploy:""
 	},
 	{
 		id: 4,
@@ -56,7 +59,8 @@ const porfolioProjects = [
 		description:
 			"My portfolio website displaying all the works I have created.",
 		technologies: ["ReactJS", "Bootstrap", "SCSS"],
-		url: "https://github.com/cranium44/cranium44.github.io",
+		source: "https://github.com/cranium44/cranium44.github.io",
+		deploy:""
 	},
 	{
 		id: 5,
@@ -64,7 +68,8 @@ const porfolioProjects = [
 		description:
 			"A clone of the Tappy Mobile Game where you navigate a bird through obstacles.",
 		technologies: ["C#", "Unity"],
-		url: "https://github.com/cranium44/Tappy",
+		source: "https://github.com/cranium44/Tappy",
+		deploy:""
 	},
 ];
 
